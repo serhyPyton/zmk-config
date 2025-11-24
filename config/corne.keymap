@@ -28,12 +28,12 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
-// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
+// | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  =  |  (  |  )  |  $  |  :  |  `   |
 // | SHFT |     |     |     |     |     |   |     |     |     |     |     |      |
 //                    | GUI |     | TAB |   | ENT |     | ALT |
                         bindings = <
    &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp EQUAL &kp LPAR  &kp RPAR  &kp DLLR &kp SEMI &kp GRAVE
    &kp LSHFT  &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans &trans
                                     &kp LGUI     &trans       &kp TAB       &kp RET  &trans   &kp RALT
                         >;
@@ -42,12 +42,12 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^   |  {  |  }  |  [  |  ]  | BSPC |
-// | SHFT |     |     |  0  |  &  | "|" |   |  =   |  (  |  )  |  $  |  :  |  `   |
+// | SHFT |     |     |  0  |  &  | "|" |   | LFT  | DWN |  UP | RGT |     |      |
 // | CTRL |     |     |  \  |  /  |  *  |   |  +   |  -  |  _  |     |     |  ~   |
 //                    | GUI |     | SPC |   | CAPS |     | ALT |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp LBRC  &kp RBRC  &kp LBKT &kp RBKT &kp BSPC
-   &kp LSHFT &trans   &trans &kp N0   &kp AMPS &kp PIPE    &kp EQUAL &kp LPAR  &kp RPAR  &kp DLLR &kp SEMI &kp GRAVE
+   &kp LSHFT &trans   &trans &kp N0   &kp AMPS &kp PIPE    &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
    &kp LCTRL &trans   &trans &kp BSLH &kp FSLH &kp ASTRK   &kp PLUS  &kp MINUS &kp UNDER &trans   &trans   &kp TILDE
                              &kp LGUI &trans   &kp SPACE   &kp CAPS  &trans    &kp RALT
                         >;
