@@ -41,12 +41,12 @@
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^   |  {  |  }  |  (  |  )  | BSPC |
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^   |  {  |  }  |  (  |  )  | DEL  |
 // | SHFT |     |     |  0  |  &  | "|" |   | LFT  | DWN |  UP | RGT |  [  |  ]   |
 // | CTRL |     |     |  \  |  /  |  *  |   |  +   |  -  |  _  |     |     |  ~   |
 //                    | GUI |     | SPC |   | CAPS |     | ALT |
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp LBRC  &kp RBRC  &kp LPAR &kp RPAR &kp BSPC
+   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp LBRC  &kp RBRC  &kp LPAR &kp RPAR &kp DEL
    &kp LSHFT &trans   &trans &kp N0   &kp AMPS &kp PIPE    &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LBKT  &kp RBKT 
    &kp LCTRL &trans   &trans &kp BSLH &kp FSLH &kp ASTRK   &kp PLUS  &kp MINUS &kp UNDER &trans   &trans   &kp TILDE
                              &kp LGUI &trans   &kp SPACE   &kp CAPS  &trans    &kp RALT
